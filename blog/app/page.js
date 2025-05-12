@@ -1,19 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Header from "@/components/header";
 import Hero from "@/components/hero";
-import Footer from "@/components/footer";
+import Layout from "@/components/layout";
 
 export default function Home() {
   return (
     <>
-      <Header />
-
-      <main>
+      <Layout>
         <Hero />
-      </main>
-      
-      <Footer />
+      </Layout>
     </>
   )
 }
