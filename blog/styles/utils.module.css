@@ -8,12 +8,12 @@
 /* 横並び(基本形) */
 .sideBySide {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* デフォルトで縦並び */
 }
 
 @media (min-width: 768px) {
   .sideBySide {
-    flex-direction: row;
+    flex-direction: row; /* 768px以上になると横並びに変更 */
     justify-content: space-between;
   }
 }
@@ -22,7 +22,7 @@
 .sideBySideCenter {
   composes: sideBySide;
   align-items: center;
-  test-align: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
