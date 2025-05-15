@@ -2,9 +2,16 @@
   composes: sideBySideCenter from "@/styles/utils.module.css";
 }
 
-.text {
+/* .text {
   paddig-top: calc(var(--display) * 0.5);
   padding-bottom: calc(var(--display) * 0.7);
+} */
+
+.text {
+  /* 垂直方向の中央揃えを強制 */
+  align-self: center;
+  text-align: left;
+  padding: var(--space-md) 0;
 }
 
 .title {

@@ -1,0 +1,17 @@
+.default {
+  width: 92%;
+  max-width: 1153px;
+  margin: 0 auto;
+}
+
+/* 本当はこう書きたいが、composesが無効になる */
+/* .large {
+  composes: default;
+  max-width: 1280px;
+} */
+
+.large {
+  width: 92%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
