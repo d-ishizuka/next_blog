@@ -1,0 +1,33 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.stack > * {
+  margin-top: 0 !important;
+}
+
+.stack > * + * {
+  margin-top: var(--stack-space, 1.5em) !important;
+}
+
+/* 直下のh2, h3にセット */
+.stack > h2,
+.stack > h3 {
+  --stack-space: 2em;
+}
+
+/* 直下のh2, h3の直後の要素にセット */
+.stack > h2 + *,
+.stack > h3 + * {
+  --stack-space: 0.8em;
+}
+
+.stack p {
+  line-height: 1.8;
+}
+
+.stack ul {
+  padding: revert;
+  list-style: revert;
+}
