@@ -5,3 +5,8 @@
 .heading {
   font-size: var(--body);
 }
+
+.list {
+  display: flex;
+  gap: 1.5em;
+}
